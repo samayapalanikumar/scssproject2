@@ -1,0 +1,119 @@
+
+@import '/src/scss/color.scss';
+@import '/src/scss/font.scss';
+@import '/src/scss/variable.scss';
+
+body{
+    background-color: lightgray;
+    margin: 20px;
+    font-family: $fontfamily;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:200px 1fr;
+    gap: 40px;
+
+    @media screen and (max-width: 600px) 
+         {
+            grid-template-columns: 1fr;
+        }
+
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        &__title{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: $padd;
+            font-size: $fontsize;
+        }
+
+        &__text{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: $padd;
+            font-size: $fontsize;
+        }
+
+        &__update{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5px;
+        }
+
+        &__btn{
+            border-radius: 5px;
+            border: none;
+            padding: $padd;
+            font-size: $fontsize;
+            color: $color;
+            background-color: $bg-color;
+        }
+        
+        &__btn:hover{
+            background-color:$bg-color;
+            cursor: pointer;
+        }
+        
+    }
+
+        &__grid {
+            display: flex;
+            grid-template-columns: minmax(200px,1fr);
+            grid-auto-rows: minmax(300px, auto);
+            gap: 20px;
+
+        &__title{
+
+            display: flex;
+            flex-direction: column;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            width: 300px;
+
+        &__sidebar{
+            display: flex;
+            justify-content: flex-end;
+
+        &__btn1{
+            cursor: pointer;
+            border: none;
+            padding: 10px; 
+            font-size: large;
+            background: transparent;             
+             
+            }   
+        } 
+        
+        &__heading{
+           margin: 0;
+        }
+        &__para{
+            margin-top: 40px;
+        }
+        }
+    }
+    @media screen and (max-width: 750px) {
+        .container__grid {
+            grid-template-columns: 1fr; 
+        }
+        
+        .container__grid__title {
+            width: 100%;
+        }
+        
+        .container__grid__sidebar {
+            justify-content: flex-start; 
+        }
+    }
+}

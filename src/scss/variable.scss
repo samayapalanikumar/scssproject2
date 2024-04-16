@@ -1,0 +1,11 @@
+
+
+
+
+@mixin displayflex ($direction:'column',$content: 'flex-end'){
+
+display:flex;
+flex-direction: $direction;
+justify-content: $content;
+
+}
