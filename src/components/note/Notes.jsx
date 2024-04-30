@@ -70,7 +70,7 @@ function Notes() {
     selectedNote(null);
   };
 
-  const deleteNote = (event: React.MouseEvent, noteId: numeber) => {
+  const deleteNote = (event: React.MouseEvent, noteId: number) => {
     event.stopPropagation();
 
     const UpdateNotes = notes.filter((note) => note.id !== noteId);
