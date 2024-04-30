@@ -19,6 +19,7 @@ body{
             flex-direction: column;
             width: 20%;
             margin: auto;
+           
 
     &__form{
             margin: 10px;
@@ -31,6 +32,7 @@ body{
             align-items: center;
             justify-content: center;
 
+            
         &__input{
 
             padding: 20px;
@@ -59,6 +61,12 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 80%; 
+    }
+}
+
 .subcontainer{
 
             background-color: white;
@@ -74,7 +82,7 @@ body{
             display: flex;
             flex-direction: column;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); 
-            
+
     &__head{
 
             margin-top: 10px;
@@ -97,5 +105,11 @@ body{
             border: none;
             border-radius: 10px;
             align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .subcontainer {
+        width: 100%; 
+        margin: 10px;
     }
 }
