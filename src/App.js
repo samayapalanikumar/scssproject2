@@ -1,7 +1,7 @@
-import "./components/note/styles.scss";
+// import "./components/CreateNote/styles.scss";
 import React, { useState } from "react";
-import CreateNotes from "./components/note/CreateNotes";
-import ReactNote from "./components/note/ReactNote";
+import CreateNote from "./components/CreateNote/CreateNote";
+import ReactNote from "./components/ReactNote/ReactNote";
 
 function App() {
   const [note, setNote] = useState([]);
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <h2 className="subhead">Create Note Here</h2>
-      <CreateNotes onAdd={addNote} />
+      <CreateNote onAdd={addNote} />
       {note.map((note, i) => (
         <ReactNote
           onDelete={deleteNote}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './style1.scss'
+import  './styles.scss'
 
 function CreateNote(props) {
 
