@@ -17,10 +17,11 @@ body{
 .container{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 20%;
             margin: auto;
            
-
     &__form{
             margin: 10px;
             border: 1px solid $color;
@@ -31,8 +32,9 @@ body{
             height: 250px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
             justify-content: center;
+            align-items: center;
+            gap: 20px;
             
         &__input{
 
@@ -58,7 +60,6 @@ body{
             border: none;
             border-radius: 10px;
             
-            // align-items: center;
             
         }
     }

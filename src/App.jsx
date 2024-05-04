@@ -1,4 +1,3 @@
-// import "./components/CreateNote/styles.scss";
 import React, { useState } from "react";
 import CreateNote from "./components/CreateNote/CreateNote";
 import ReactNote from "./components/ReactNote/ReactNote";
